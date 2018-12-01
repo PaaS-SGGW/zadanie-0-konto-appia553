@@ -8,6 +8,6 @@ echo "Error 404, no pancakes found<br>";
   $stmt = $pdo->prepare($sql);
   $stmt->execute();
   $rowCount = $stmt->rowCount();
-  $details = $stmt->fetch(PDO::FETCH_ASSOC);
-  echo "Users: <br>" + $details;
+  $details = $stmt->fetch();
+  echo "Users: <br>" + $details->name + " " + $details->email + "<br>";
 ?>
