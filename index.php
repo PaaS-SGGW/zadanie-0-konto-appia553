@@ -2,7 +2,7 @@
 
 include ('db.php');
 
-echo "Error 404, no pancakes found<br>"
+echo "Error 404, no pancakes found<br>";
 
  $sql = 'SELECT * FROM users';
   $stmt = $pdo->prepare($sql);
