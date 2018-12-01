@@ -9,5 +9,6 @@ echo "Error 404, no pancakes found<br>";
   $stmt->execute();
   $rowCount = $stmt->rowCount();
   $details = $stmt->fetch();
-  echo $details;
+  print_r ($details->name);
+
 ?>
