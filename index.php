@@ -1,6 +1,6 @@
 <?php
 
-include ('db.php')
+include ('db.php');
 
 echo "Error 404, no pancakes found<br>"
 
