@@ -10,6 +10,7 @@ echo "Error 404, no pancakes found<br>";
   $rowCount = $stmt->rowCount();
   $details = $stmt->fetch();
   echo "<br>Users: <br>";
-  print_r ($details->name + " ");
+  print_r ($details->name);
+  echo " ";
   print_r ($details->email);
 ?>
